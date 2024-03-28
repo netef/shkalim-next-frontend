@@ -7,10 +7,9 @@ export const links = [
     title: "Speakers",
     href: "/speakers",
   },
-
   {
-    title: "Generators",
-    href: "/generators",
+    title: "Create Product",
+    href: "/create",
   },
   {
     title: "About",
