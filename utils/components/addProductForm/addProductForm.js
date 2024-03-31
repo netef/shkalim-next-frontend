@@ -18,7 +18,7 @@ export default function AddProductForm() {
         <TextField label="price" name="price" />
         <TextField type="text" label="img" name="img" />
         <textarea placeholder="Description..." maxLength={200} name="desc" />
-        <SubmitBtn text="Add amazing product" />
+        <SubmitBtn />
       </form>
     </div>
   );
