@@ -5,7 +5,6 @@ export default async function SpeakersPage() {
   const speakers = await getAllSpeakers();
   return (
     <div>
-      <div>speakers</div>
       <ProductsGrid products={speakers} />
     </div>
   );
