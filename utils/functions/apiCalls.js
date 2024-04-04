@@ -3,7 +3,7 @@ import axios from "axios";
 const SERVER_URL =
   process.env.NEXT_PUBLIC_ENVIRONMENT === "development"
     ? "http://localhost:3001"
-    : "https://shkalim-rishoni-backend-1.onrender.com";
+    : "https://shkalim-rishoni-backend.onrender.com";
 export async function getAllSpeakers(token) {
   try {
     const response = await fetch(`${SERVER_URL}/products`, {
