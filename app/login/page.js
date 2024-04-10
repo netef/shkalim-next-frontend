@@ -9,8 +9,10 @@ export default function LoginPage() {
   async function handleSumbit(formData) {
     "use server";
     const data = Object.fromEntries(formData);
-    const token = await login(data);
-    setCookie("token", token, { cookies });
+    const dataFromServer = await login(data);
+    console.log(dataFromServer);
+    setCookie("token", dataFromServer.token, { cookies });
+    setCookie("user_id", dataFromServer.user_id, { cookies });
     redirect("/");
   }
   return (
