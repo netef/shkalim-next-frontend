@@ -4,6 +4,7 @@ import { LoadingProvider } from "@/utils/contexts/loadingContext";
 import { getCookie } from "cookies-next";
 import { cookies } from "next/headers";
 import "./globals.css";
+import FacebookNav from "@/utils/components/facebookNav/facebookNav";
 
 const assistant = Assistant({ subsets: ["hebrew", "latin"] });
 
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={assistant.className}>
-        {token && <Navbar />}
+        {/* {token &&  */}
+        <FacebookNav />
+        {/* } */}
         <LoadingProvider>{children}</LoadingProvider>
       </body>
     </html>
